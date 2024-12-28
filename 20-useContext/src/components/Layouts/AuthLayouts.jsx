@@ -39,12 +39,12 @@ const Navigation = ({ type }) => {
   }
 
 AuthLayout.propTypes = {
-  children: PropTypes.object.isRequired,
-  title: PropTypes.object.isRequired,
-  type: PropTypes.object.isRequired,
+  children: PropTypes.node.isRequired,
+  title: PropTypes.string,
+  type: PropTypes.string,
 }
 Navigation.propTypes = {
-  type: PropTypes.object.isRequired,
+  type: PropTypes.string,
 }
 
 export default AuthLayout

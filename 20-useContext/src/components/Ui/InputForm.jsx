@@ -15,10 +15,10 @@ const InputForm = forwardRef((props, ref) => {
 
 InputForm.displayName = 'FormInput'
 InputForm.propTypes = {
-  label: PropTypes.object.isRequired,
-  name: PropTypes.object.isRequired,
-  type: PropTypes.object.isRequired,
-  placeholder: PropTypes.object.isRequired,
-  ref: PropTypes.object.isRequired,
+  label: PropTypes.string,
+  name: PropTypes.string,
+  type: PropTypes.string,
+  placeholder: PropTypes.string,
+  ref: PropTypes.object,
 }
 export default InputForm;

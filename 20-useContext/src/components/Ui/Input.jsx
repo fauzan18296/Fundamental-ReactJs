@@ -9,8 +9,8 @@ const Input = forwardRef((props, ref) =>  {
 
 Input.displayName = "input"
 Input.propTypes = {
-  types: PropTypes.object.isRequired,
-  placeholder: PropTypes.object.isRequired,
-  name: PropTypes.object.isRequired,
+  types: PropTypes.string,
+  placeholder: PropTypes.string,
+  name: PropTypes.string,
 }
 export default Input;

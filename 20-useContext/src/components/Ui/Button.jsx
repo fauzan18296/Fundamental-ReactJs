@@ -11,9 +11,10 @@ const Button = ({ classname = "bg-black", children = "...", onClick = () => {}, 
   )
 }
 Button.propTypes = {
-  classname: PropTypes.object.isRequired,
-  children: PropTypes.object.isRequired,
-  onClick: PropTypes.object.isRequired,
-  type: PropTypes.object.isRequired,
+  classname: PropTypes.string.isRequired,
+  children: PropTypes.node.isRequired,
+  onClick: PropTypes.func,
+  type: PropTypes.oneOf(['button', 'submit', 'reset']),
 }
+
 export default Button;
